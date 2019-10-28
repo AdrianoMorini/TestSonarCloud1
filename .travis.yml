@@ -1,12 +1,11 @@
 language: java
 jdk:
 - openjdk8
-
 addons:
-sonarcloud:
-organization: AdrianoMorini
-token:
-secure: 587f89cace4947a7d3963c02eccc7c667246a078
+    sonarcloud:
+        organization: AdrianoMorini
+        token:
+            secure: 587f89cace4947a7d3963c02eccc7c667246a078
 script:
 - ant build
 - sonar-scanner
