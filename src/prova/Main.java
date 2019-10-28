@@ -1,9 +1,12 @@
 package prova;
+import java.util.logging.Logger;
+
 
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World.");
+		Logger logger = Logger.getLogger(Main.class.getName());
+		logger.log("Hello World");
 	}
 	
 }
